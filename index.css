@@ -201,3 +201,67 @@ h2 {
         font-size: 15px;
     }
 }
+.contact {
+    max-width: 700px;
+    margin: 60px auto 40px;
+    padding: 30px 25px;
+    background: rgba(103, 33, 119, 0.6);
+    border-radius: 18px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #555;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, #a21caf, #4c1d95);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
