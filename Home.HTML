@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> abbas haydar.com</title>
+    </head>
+    <body>
+            
+        <div class="mma1">
+        <h1> hello word</h1>
+</div>
+        <p><h2>  information</h2></p>
+        <div class="text-box">
+        <p>
+            <H4>Name: abbas haydar.</H4>
+            <H4>village: Meis al jabl.</H4>
+            <h4>tel: 76644269</h4>
+            <h4>gmail: abbashaydar5566@gmail.com</h4>
+            <h4>student in ALMaaref University</h4>
+            <img src="image/2026-02-04 at 11.23.44 PM.jpeg" alt="2026" id="logo">
+            <link rel="stylesheet" href="css/Home.css">
+
+        </p>
+        </div>
+        <div class="center-btn">
+            <a href="cv.html/Abbas_Haydar_CV (9).pdf" target="_blank" class="cv-button"> show CV </a>
+        </div>
+
+        <p2>
+            <h2> programming languages iknow:</h2> <span class="highlight"></span>
+        </p2>
+        <div class="logos">
+            <img src="image/534-5345877_python-logo-clipart.png" alt="534-5345877_python-logo-clipart">
+            <img src="image/c--logo-icon-0.png" alt="c--logo-icon-0">
+            <img src="image/html-5.png" alt="html-5">
+            <img src="image/png-transparent-css-logo.png" alt="css">
+        </div>
+
+        <div class="description" id="desc">
+           <h5> Welcome to my page, my name is Abbas Haidar, a student at the Lebanese Maarif University, I study computer science, and I have many life experiences that enable me to work in many fields such as aluminum blacksmithing, management, repair of electronic devices, telephones, computers... I am also good at many skills. My goal is to excel and work hard in order to highlight and develop my skills and provide my services to those who are interested.</h5>
+
+        </div>
+        <script> 
+            const desc = document.getElementById("desc");
+            const words = desc.innerText.split(" ");
+
+            desc.innerHTML = words
+            .map(word => `<span class="word">${word}</span>`)
+            .join(" ");
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=cairo:wght@400;600;700&display=swap" rel="stylesheet">
+        <div class="dropdown">
+    <button class="dropbtn" onclick="toggleMenu()">Learn More</button>
+    <div class="dropdown-content" id="dropdownMenu">
+        <a href="universitylife.html">University Life</a>
+        <a href="mylife.html">My Life</a>
+        <a href="myplans.html">My Plans</a>
+    </div>
+</div>
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById("dropdownMenu");
+                menu.style.display = menu.style.display === "block" ? "none" : "block";
+            }
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    const dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (let i = 0; i <dropdowns.length; i++){
+                        dropdowns[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+        
+    </body>
+</html>
