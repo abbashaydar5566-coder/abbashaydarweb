@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abbas Haydar</title>
+
+    <link rel="stylesheet" href="css/Home.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div class="all">
+    <div class="mma1">
+        <h1>Hello World</h1>
+    </div>
+
+    <h2>Information</h2>
+
+    <div class="text-box">
+        <h4>Name: Abbas Haydar</h4>
+        <h4>Village: Meis al Jabal</h4>
+        <h4>Tel: 76 644 269</h4>
+        <h4>Email: abbashaydar5566@gmail.com</h4>
+        <h4>Student at Al Maaref University</h4>
+
+        <img src="image/2026-02-04 at 11.23.44 PM.jpeg" alt="Profile Image" id="logo">
+    </div>
+
+    <div class="center-btn">
+        <a href="cv/Abbas_Haydar_CV.pdf" target="_blank" class="cv-button">
+            Show CV
+        </a>
+    </div>
+
+    <h2>Programming languages I know:</h2>
+
+    <div class="logos">
+        <img src="image/534-5345877_python-logo-clipart.png" alt="Python">
+        <img src="image/c--logo-icon-0.png" alt="C++">
+        <img src="image/html-5.png" alt="HTML">
+        <img src="image/png-transparent-css-logo.png" alt="CSS">
+    </div>
+
+    <div class="description" id="desc">
+        <h5>
+            Welcome to my page, my name is Abbas Haydar, a student at the Lebanese Al Maaref University.
+            I study computer science and I have many life experiences that enable me to work in different fields
+            such as aluminum blacksmithing, management, and electronic device repair.
+            My goal is to excel, work hard, and develop my skills to provide high-quality services.
+        </h5>
+    </div>
+
+    <script>
+        const desc = document.getElementById("desc");
+        const words = desc.innerText.split(" ");
+
+        desc.innerHTML = words
+            .map(word => `<span class="word">${word}</span>`)
+            .join(" ");
+    </script>
+
+    <div class="dropdown">
+        <button class="dropbtn" onclick="toggleMenu()">Learn More</button>
+        <div class="dropdown-content" id="dropdownMenu">
+            <a href="universitylife.html">University Life</a>
+            <a href="mylife.html">My Life</a>
+            <a href="myplans.html">My Plans</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("dropdownMenu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    dropdowns[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
