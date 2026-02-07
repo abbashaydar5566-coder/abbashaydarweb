@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
@@ -16,13 +15,11 @@
 
 
 #logo {
-    max-width: 100%;
+    max-width: 170px;
     height: auto;
     position: absolute; /*تثبيت في الشاشة*/
     top: 14.2%; /*من الاعلى*/
     right: 0%;/*من اليمين*/
-    margin:0 auto;
-    display:  block;
 }
 
 
@@ -217,5 +214,6 @@ body {
 .dropdown-content a:hover {
     background-color:#6721779a ;
 }
+
 
 
