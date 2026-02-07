@@ -38,3 +38,19 @@ img {
     overflow: hidden;
     border-radius: 16px;
 }
+.description {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: min(600px, 90%);
+    max-width: 600px;
+
+    text-align: center;
+    padding: 25px;
+    background: #6721779a;
+    border-radius: 14px;
+    font-size: 18px;
+    line-height: 1.9;
+}
