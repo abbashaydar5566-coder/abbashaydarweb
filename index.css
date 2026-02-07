@@ -1,4 +1,21 @@
-#logo {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.item {
+    flex: 1 1 300px;
+    max-width:100%;
+    text-align: center;
+}
+
+
+
+
+
+#logo item {
     width: 170px;
     height: auto;
     position: absolute; /*تثبيت في الشاشة*/
@@ -59,7 +76,7 @@ h2 {
     border-radius: 5px;
 
 }
-.text-box{
+.text-box item {
      color: rgb(253, 253, 252); /*لون النص*/
     color: (233, 233, 233, 0.589); /*لون النص*/
      background-color:#5f1a6ea1 ;/*خلفية نص شفافة*/
@@ -68,7 +85,7 @@ h2 {
      
      
 }
-.cv-button {
+.cv-button item {
     display: inline-flex;
     background-color: #3c024ba2;
     color: azure;
@@ -92,7 +109,7 @@ h2 {
     transform: translateY(-10px);
     box-shadow: 0 7px 15px rgba(77, 5, 99, 0.911);
 }
-.center-btn {
+.center-btn item {
     display: flex;
     justify-content: center;
 }
@@ -104,7 +121,7 @@ h2 {
     border-radius: 5px;
     display: inline-block;
 }
-.logos {
+.logos item {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -197,3 +214,4 @@ body {
 .dropdown-content a:hover {
     background-color:#6721779a ;
 }
+
