@@ -46,7 +46,7 @@ animation: moveBG 20s linear infinite;
     100% {background-position: 0% 0%; }
 }
 
-h1 {
+h1 item {
     font-size: 45.9px;
     font-weight: 700;
     color: #fdfdfdb6;
@@ -65,7 +65,7 @@ h1::after {
 }
 
 
-h2 {
+h2 item {
     display: block;
     width: max-content;
     margin: 0 auto;
@@ -112,7 +112,7 @@ h2 {
     justify-content: center;
 }
 
-.p2 {
+.p2 item {
      color: antiquewhite; /*لون النص*/
     background-color: hsla(300, 91%, 17%, 0.842);/*خلفية نص شفافة*/
     padding: 5px 10px; /*مساحة حول النص*/
@@ -214,6 +214,7 @@ body {
 .dropdown-content a:hover {
     background-color:#6721779a ;
 }
+
 
 
 
