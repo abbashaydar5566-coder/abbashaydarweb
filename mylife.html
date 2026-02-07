@@ -14,8 +14,21 @@
      I am 22 years old and I have learned many things throughout these years,</br>
      and I will start my journey with you from scratch.</h3></p>
      <img src="WhatsApp Image 2026-02-06 at 4.45.40 PM.jpg" alt="2027" id="1122">
+<div class="description" id="desc">
+           <h5> Welcome to my page, my name is Abbas Haidar, a student at the Lebanese Maarif University, I study computer science, and I have many life experiences that enable me to work in many fields such as aluminum blacksmithing, management, repair of electronic devices, telephones, computers... I am also good at many skills. My goal is to excel and work hard in order to highlight and develop my skills and provide my services to those who are interested.</h5>
+
+        </div>
+        <script> 
+            const desc = document.getElementById("desc");
+            const words = desc.innerText.split(" ");
+
+            desc.innerHTML = words
+            .map(word => `<span class="word">${word}</span>`)
+            .join(" ");
+        </script>
 
     </body>
     
 
 </html>
+
