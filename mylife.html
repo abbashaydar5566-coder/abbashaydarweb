@@ -9,35 +9,26 @@
 
 <body>
 
-    <h1 class="title">Who am I?</h1>
+<h1 class="title">Who am I?</h1>
 
-    <h3 class="intro">
-        I am Abbas Haidar from the border town of Mays al-Jabal in Lebanon.<br>
-        My town is located in southern Lebanon near the Palestinian border.<br>
-        I am 22 years old and I have learned many things throughout these years,<br>
-        and I will start my journey with you from scratch.
-    </h3>
+<h3 class="intro">
+    I am Abbas Haidar from the border town of Mays al-Jabal in Lebanon.<br>
+    My town is located in southern Lebanon near the Palestinian border.<br>
+    I am 22 years old and I have learned many things throughout these years,<br>
+    and I will start my journey with you from scratch.
+</h3>
 
-    <img src="WhatsApp Image 2026-02-06 at 4.45.40 PM.jpg" alt="Abbas Haidar">
+<img src="WhatsApp Image 2026-02-06 at 4.45.40 PM.jpg" alt="Abbas Haidar">
 
-    <div class="description" id="desc">
-        <h5>
-            Welcome to my page, my name is Abbas Haidar, a student at the Lebanese Maarif University,
-            I study computer science, and I have many life experiences that enable me to work in many fields
-            such as aluminum blacksmithing, management, repair of electronic devices, telephones, computers...
-            I am also good at many skills. My goal is to excel and work hard in order to highlight and develop
-            my skills and provide my services to those who are interested.
-        </h5>
-    </div>
+<div class="description">
+    <p id="desc">
+        Welcome to my page, my name is Abbas Haidar, a student at the Lebanese Maarif University,
+        I study computer science, and I have many life experiences that enable me to work in many fields
+        such as aluminum blacksmithing, management, repair of electronic devices, telephones, computers.
+        I am also good at many skills. My goal is to excel and work hard.
+    </p>
+</div>
 
-    <script>
-        const desc = document.getElementById("desc");
-        const words = desc.innerText.split(" ");
-
-        desc.innerHTML = words
-            .map(word => `<span class="word">${word}</span>`)
-            .join(" ");
-    </script>
-
-</body>
-</html>
+<script>
+    const desc = document.getElementById("desc");
+    const words = desc.innerText.split(" "
