@@ -22,10 +22,12 @@ body {
 }
 
 img {
-    width: 300px;
+    max-width: 280px;   /* الحد الأقصى */
+    width: 100%;        /* يتجاوب مع الشاشة */
+    height: auto;
     border-radius: 16px;
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .word {
@@ -37,3 +39,4 @@ img {
     color: #00ffd5;
     transform: scale(1.2);
 }
+
