@@ -1,20 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 40px 20px;
-    min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-    text-align: center;
 
     background:
         radial-gradient(circle at 20% 20%, rgb(165, 21, 100), transparent 40%),
         radial-gradient(circle at 80% 80%, rgb(114, 21, 106), transparent 40%),
-        linear-gradient(135deg, #0f268f, #0b92ad);
+        radial-gradient(circle at 50% 50%, rgb(17, 141, 79), transparent 20%),
+        radial-gradient(circle at 90% 90%, rgb(6, 189, 149), transparent 40%),
+        linear-gradient(135deg, #0f268f, #0b92ad) !important;
 
-    background-size: 200% 200%;
-    animation: moveBG 20s linear infinite;
+    background-size: 200% 200% !important;
+    animation: moveBG 20s linear infinite !important;
 }
-
 @keyframes moveBG {
     0% { background-position: 0% 0%; }
     50% { background-position: 100% 100%; }
@@ -22,25 +21,28 @@ body {
 }
 
 img {
-    max-width: 280px;   /* الحد الأقصى */
-    width: 100%;        /* يتجاوب مع الشاشة */
+    max-width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 16px;
     display: block;
-    margin: 20px auto;
+    margin: 30px auto;
+}
+
+#desc {
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 .word {
     display: inline-block;
-    transition: 0.3s ease;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .word:hover {
     color: #00ffd5;
     transform: scale(1.2);
 }
-
-body {
-    background: red !important;
-}
-
